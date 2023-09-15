@@ -1,0 +1,55 @@
+/* pages/diy/diy.wxss */
+page {
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.title
+{
+  padding-top:150rpx ;
+  padding-left:80rpx;
+}
+.author
+{
+  padding-left:80rpx;
+}
+.box1
+{
+  display: flex;
+  justify-content:center;
+}
+.content{
+  border: black 2rpx solid;
+  padding-left: 10rpx;
+  padding-bottom: 10rpx;
+}
+.btn{
+  width:80rpx;
+  height:80rpx;
+}
+.time{
+  padding-left: 80rpx;
+  font-size: 40rpx;
+}
+.bofang{
+  margin-left: 80rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 75%;
+  border:6rpx solid rgb(0, 0, 0);
+  border-radius: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.country
+{
+  margin-left: 80rpx;
+  margin-bottom: 20rpx;
+}

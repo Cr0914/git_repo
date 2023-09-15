@@ -1,0 +1,61 @@
+<!--pages/person/person.wxml-->
+
+<!--头像名称-->
+<view class="partOne"> 
+  <view class="userinfo">
+    <block wx:if="{{!islogin}}">
+      <button bindtap="submit"> 获取头像昵称 </button>
+    </block>
+    <block wx:else >
+      
+      <image bindtap="goto_information" class="userinfo-avatar" src="{{userInfo_img}}"  mode="cover"></image>
+      <!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+      <text class="userinfo-nickname" bindtap="goto_information">{{userInfo_name}}</text>
+      <view bindtap="goto_information" class="information_icon">个人信息</view>
+    </block>
+  </view>
+
+</view>
+
+<!--我的收藏、朗诵-->
+<view class="partTwo">
+  <!--我的收藏-->
+  <view class="item" bindtap="goto_shoucang">
+    <view class="itemname">
+      <view ><image src="/images/person/收藏.png" /></view>
+      <view ><text >我的收藏</text></view>
+    </view>
+    <view class="right"><image src="/images/person/向右箭头.png" /></view>
+  </view>
+  <!--朗诵-->
+  <view class="item" bindtap="goto_langsong">
+    <view class="itemname">
+      <view ><image src="/images/person/朗诵.png" /></view>
+      <view ><text >我的朗诵</text></view>
+    </view>
+    <view class="right"><image src="/images/person/向右箭头.png" /></view>
+  </view>
+</view>
+
+<!--关于我们、使用帮助、绑定个人信息-->
+<view class="partThree">
+  <!--关于我们-->
+  <view class="item" bindtap="goto_about_us">
+    <view class="itemname">
+      <view ><image src="/images/person/关于我们.png" /></view>
+      <view ><text >关于我们</text></view>
+    </view>
+    <view class="right"><image src="/images/person/向右箭头.png" /></view>
+  </view>
+  <!--使用帮助-->
+  <view class="item" bindtap="goto_help">
+    <view class="itemname">
+      <view ><image src="/images/person/帮助.png" /></view>
+      <view ><text >使用帮助</text></view>
+    </view>
+    <view class="right"><image src="/images/person/向右箭头.png" /></view>
+  </view>
+
+</view>
+
+

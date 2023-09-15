@@ -1,0 +1,18 @@
+<!--显示作者详情界面-->
+<image class='background' src="/images/backgroud/poet_intro2.png"mode="aspectFill"></image>
+<view class="div1">
+  <view class="div2">
+    <image src="{{imageurl}}" class="imagediv"></image>
+    <text class="textdiv1">{{name}}</text>
+  </view>
+  <text class="textdiv2"> ┃ 诗人简介：</text>
+  <view class="div3">
+    {{simpleIntro}}
+  </view>
+  <text class="textdiv2"> ┃ 详细介绍：</text>
+  <view class="div3" wx:for="{{detailIntro}}" wx:key="index" wx:for-index='key'>
+  <!-- 详细介绍中的换行符要在text组件中才起效果 -->
+    <text user-select>{{key}}:{{item}}</text>  
+  </view>
+
+</view>

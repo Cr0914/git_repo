@@ -1,0 +1,78 @@
+/**index.wxss**/
+/**对输入框做美化**/
+
+page{
+  height:100%;
+  }
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  opacity: 0.3;
+  }
+
+.sentence-box
+{
+  padding-top: 100rpx;
+  padding-left: 180rpx;
+  height: 800rpx;
+  writing-mode: vertical-lr;
+  font-size: larger;
+  font-weight: 700;
+  font-family:cursive;
+}
+.from-box
+{
+  writing-mode: vertical-lr;
+  font-weight:800;
+  padding-left: 300rpx;
+  font-family: cursive;
+
+}
+.changeDIV
+{
+  /* position:fixed; */
+  margin-top: 100rpx;
+  display:flex;
+  width:30%;
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(255, 255, 238);
+  border-radius: 25rpx; 
+}
+/* .grid-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: center;
+  border-top:1rpx solid rgb(233, 228, 228);
+  border-left:1rpx solid rgb(233, 228, 228);
+
+}
+.grid-item 
+{
+  width: 49.6%;
+  height:200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right:1rpx solid rgb(233, 228, 228);
+  border-bottom:1rpx solid rgb(233, 228, 228);
+  box-sizing: border-box;
+}
+.grid-item image
+{
+  width: 100rpx;
+  height:100rpx;
+}
+.grid-item text
+{
+  font-size:30rpx;
+  margin-top: 10rpx;
+}
+
+ */

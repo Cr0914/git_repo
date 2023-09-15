@@ -1,0 +1,124 @@
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search {
+  margin-right: 4px;
+  font-size: inherit;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__text {
+  display: inline-block;
+  font-size: 16px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9B9B9B;
+  background: #FFFFFF;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+.outerview
+{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.WriterItem{
+  background-color: #fff;
+  font-weight: 400;
+  display: flex;
+  min-width: 0;
+  flex-direction: row;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-bottom:solid 0.5px rgb(228, 228, 228); 
+}
+.icon1
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  margin-left: 15rpx;
+}
+.namediv
+{
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+.name{
+  font-weight: 600;
+  padding-left: 20rpx;
+}
+.demo1 {
+   padding-left: 20rpx;
+   padding-right: 10rpx;
+   font-size: small;
+   overflow: hidden;
+   display: inline-block;
+   white-space: nowrap; 
+   text-overflow: ellipsis;
+   /*flex布局，，white-space:nowrap会影响flex布局下未设定宽度的元素，所以给设置了display:flex的父元素设置一下min-width: 0;即可解决问题。 */
+}
+
+.pagechange
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+
+}
+
+.pageicon
+{
+  font-weight: 800;
+}

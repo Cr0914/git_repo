@@ -1,0 +1,106 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E4%BA%91%E6%9C%97%E8%AF%B5",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的界面",
+          "pathName": "pages/person/person",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文库",
+          "pathName": "pages/libaray/libaray",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "诗人",
+          "pathName": "pages/author/author",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "关于我们",
+          "pathName": "pages/person/about_us/about_us",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageD/pages/my_recite",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "元曲",
+          "pathName": "packageA/pages/yuanqu_re_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "楚辞",
+          "pathName": "packageA/pages/chuci_re_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "唐诗",
+          "pathName": "packageA/pages/tangshi_re_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "诗经",
+          "pathName": "packageA/pages/shijing_re_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "论语",
+          "pathName": "packageA/pages/lunyu_re_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文库",
+          "pathName": "pages/libaray/libaray",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "朗诵主页面",
+          "pathName": "pages/list/list",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.30.2"
+}

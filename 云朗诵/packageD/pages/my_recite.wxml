@@ -1,0 +1,11 @@
+<!--packageD/pages/my_recite.wxml-->
+<view class="show" wx:for="{{share_list}}" wx:key="_id" bindtap="to_show" data-reciteID="{{item._id}}">
+<view class="message">
+    <view class="title">{{item.poem_title}}</view>
+    <view class="author">作者：{{item.poem_author}}</view>
+  </view>
+  <view class="listen">听朗诵</view>
+  </view>
+
+  <view wx:if="{{!havedata}}" class="end">您还没有朗诵记录哦~</view>
+  <view wx:else><view wx:if="{{loaded}}" class="end">已加载全部~</view></view>

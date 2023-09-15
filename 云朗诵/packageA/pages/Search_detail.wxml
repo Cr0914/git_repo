@@ -1,0 +1,10 @@
+<!-- pages/libaray/Search_datail/Search_detail.wxml -->
+<image class='background' src="/images/backgroud/poet_intro2.png"mode="aspectFill"></image>
+<view class="div1" wx:for="{{search_result}}" wx:key="id">
+  <view class="div2" bindtap="handleGoDetail" data-id="{{item.id}}" data-type="{{item.classType}}">
+    <view class="title">《{{item.title}}》</view>
+    <view class="content">{{item.content}}</view>
+  </view>
+</view>
+<view  class="err">到底了，无更多数据</view>
+

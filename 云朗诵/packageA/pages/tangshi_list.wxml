@@ -1,0 +1,6 @@
+<image class='background' src="/images/backgroud/poet_intro2.png"mode="aspectFill"></image>
+<view class="outerview" wx:for="{{poemlist}}" wx:key="id">
+    <view class="itemDIV" bindtap="onDetail" data-bzId="{{item._id}}">
+      <text class="titlediv">《{{item.title}}》</text>
+    </view>
+</view>

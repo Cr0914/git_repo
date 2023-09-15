@@ -1,0 +1,51 @@
+/* pages/poetry_list/shijing_list/shijing_re_datail/shijing_re_detail.wxss */
+page{
+  height:100%;
+  }
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  }
+  
+.div1
+{
+  display: flex;
+  flex-direction: column;
+}
+.div2
+{
+  display: flex;
+  flex-direction: column;
+  padding-left:30rpx ;
+  padding-right:30rpx ;
+}
+.title
+{
+  padding-top: 50rpx;
+  text-align: center;
+  font-weight: 800;
+  font-size:larger;
+}
+.chapter-section
+{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+
+.collect-box
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20rpx;
+}
+.save_image
+{
+width: 60rpx;
+height: 60rpx;
+}

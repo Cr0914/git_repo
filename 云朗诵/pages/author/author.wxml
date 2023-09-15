@@ -1,0 +1,37 @@
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 最初始时的搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" bindinput="SavaInput" bindconfirm="Searchbutton" class="weui-search-bar__input" placeholder="搜索诗人"/>
+                </view>
+                <!-- 可编辑时的搜索框 -->
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索诗人</view>
+                </label>
+            </view>
+            <!-- 搜索 -->
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="Searchbutton">搜索</view>
+        </view>
+    </view>
+</view>
+<view class="outerview" wx:for="{{writerlist}}" wx:key="id">
+  <view class="WriterItem" bindtap="onDetail" data-bzId="{{item._id}}"> 
+    <view><image src="{{item.headImageUrl}}" class="icon1"></image></view>
+    <view class="namediv">
+      <text class="name">{{item.name}}</text>
+      <view class="demo1">{{item.simpleIntro}}</view>
+    </view>
+  </view>
+</view>
+<!-- 底部固定 style="position:fixed; bottom:0;width: 750rpx;" -->
+<view class="pagechange" >
+	<view class="pageicon" bindtap="pageback" wx:if="{{backFlag==1}}">上一页</view>
+	<view class="pageicon"  bindtap="pagenext" wx:if="{{nextFlag==1}}">下一页</view>
+</view>
+
+
+

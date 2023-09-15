@@ -1,0 +1,21 @@
+/* pages/person/shoucang/shoucang.wxss */
+.outer_view
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-box{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 16rpx 0;
+  
+}
+
+.title_text{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size:larger;
+}

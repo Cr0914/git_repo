@@ -1,0 +1,13 @@
+<!--pages/person/shoucang/shoucang.wxml-->
+<view class="outer_view">
+<!--过滤 将收藏显示-->
+  <block  wx:for="{{collect}}" wx:if="{{item.isShow===true}}">
+    <view class="item-box" wx:key="id" wx:for-item="item" data-id="{{item.id}}"  data-type="{{item.classType}}" bindtap="handleGoDetail">
+      <!-- 文字容器 -->
+      <view>
+        <view class="title_text">《{{item.title}}》</view>
+      </view>  
+    </view>
+  </block>
+</view>
+

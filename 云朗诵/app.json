@@ -1,0 +1,114 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/libaray/libaray",
+    "pages/person/person",
+    "pages/author/author",
+    "pages/list/list"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "name": "libary",
+      "pages": [
+        "pages/Search_detail",
+        "pages/lunyu_list",
+        "pages/lunyu_re_detail",
+        "pages/shijing_list",
+        "pages/shijing_re_detail",
+        "pages/tangshi_list",
+        "pages/tangshi_re_detail",
+        "pages/chuci_list",
+        "pages/chuci_re_detail",
+        "pages/yuanqu_list",
+        "pages/yuanqu_re_detail",
+        "pages/songci_list",
+        "pages/songci_re_detail"
+      ]
+    },
+    {
+      "root": "packageB",
+      "name": "author",
+      "pages": [
+        "pages/search_re",
+        "pages/re-detail"
+      ]
+    },
+    {
+      "root": "packageD",
+      "name": "person",
+      "pages": [
+        "pages/shoucang",
+        "pages/about_us",
+        "pages/help",
+        "pages/information",
+        "pages/my_recite"
+      ]
+    },
+    {
+      "root": "packageC",
+      "name": "recite",
+      "pages": [
+        "pages/list2",
+        "pages/diy",
+        "pages/search",
+        "pages/show"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云朗诵",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "#FF0000",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "/images/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/libaray/libaray",
+        "text": "文库",
+        "iconPath": "/images/tab/libaray.png",
+        "selectedIconPath": "/images/tab/libaray-active.png"
+      },
+      {
+        "pagePath": "pages/author/author",
+        "text": "诗人",
+        "iconPath": "/images/tab/author.png",
+        "selectedIconPath": "/images/tab/author_active.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "朗诵",
+        "iconPath": "/images/tab/recite.png",
+        "selectedIconPath": "/images/tab/recite-active.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "/images/tab/personal.png",
+        "selectedIconPath": "/images/tab/personal-active.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "cloud": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

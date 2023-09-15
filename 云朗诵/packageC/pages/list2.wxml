@@ -1,0 +1,38 @@
+<!--pages/list2/list2.wxml-->
+<image class="background" src="../image/back.jpg"></image>
+<view class="demo-box">
+  <view class='title'>《{{poem.title}}》</view>
+  <view class='author'>{{poem.author}}</view>
+  <scroll-view scroll-y class="poem-box">{{poem.content}}</scroll-view>
+</view>
+
+<modal wx:if="{{musicMenu}}" class="Menu" show="true" height='60%' bindcancel="modalCancel" bindconfirm='modalConfirm'>
+  　　<scroll-view scroll-y class='modal-content'>
+    <radio-group bindchange="handlechange">
+      <view class="SongChoose" wx:for="{{songItem}}" wx:key="id">
+        <radio value='{{item.value}}' checked='{{item.checked}}' />{{item.name}}
+      </view>
+    </radio-group>
+    <!--播放音频代码-->
+  </scroll-view>
+</modal>
+
+<modal wx:if="{{stop}}" class="stopOp" show="true" height='25%' bindcancel="stopCancel" bindconfirm='stopConfirm'>
+  <view class="tips">确定要终止录音吗？</view>
+</modal>
+
+<view class="footer">
+  <!--底部区域-->
+  <view>
+    <view class="footer1">
+      <!-- <image src="{{playSing.musiccoverImg}}" class="footerImage"></image>-->
+    </view>
+  </view>
+  <view class="footer3">
+    <image bindtap="music" src='../image/磁片唱片.png' mode="aspectFit"></image>
+    <image wx:if="{{!start}}" bindtap="start" src='../image/麦克风.png' mode="aspectFit"></image>
+    <image wx:elif="{{isPlay}}" bindtap="pause" src='../image/暂停圆.png' mode="aspectFit"></image>
+    <image wx:else bindtap="resume" src='../image/播放圆.png' mode="aspectFit"></image>
+    <image bindtap="stop" src='../image/停止圆.png' mode="aspectFit"></image>
+  </view>
+</view>

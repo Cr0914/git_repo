@@ -1,0 +1,17 @@
+<image src="/images/backgroud/b3.jpg" class="background"></image>
+
+<view wx:for="{{sentence}}">
+  <text class="sentence-box">{{item.content}}</text>
+  <text class="from-box"> {{item.from}}</text>
+</view>
+
+<button  class="changeDIV" bindtap="change_sentence">换一句</button>
+
+
+<!-- 九宫格（四宫格）实现 -->
+<!-- <view class="grid-list" >
+  <view class="grid-item" wx:for="{{GridList}}" wx:key="id">
+    <image src="{{item.url}}"></image>
+    <text>{{item.text}}</text>
+  </view>
+</view> -->

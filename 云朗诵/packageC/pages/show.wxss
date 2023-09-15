@@ -1,0 +1,265 @@
+/* pages/show/show.wxss */
+/* page {
+  height: 100%;
+} */
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.result {
+  position: relative;
+  top: 12%;
+  height: 88%;
+  }
+.demo-box {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding-top: 125rpx;
+  text-align: center;
+  font-size: 50rpx;
+}
+
+.author {
+  font-size: 35rpx;
+  padding-top: 10rpx;
+  height: 20rpx;
+  text-align: center;
+}
+
+.poem-box {
+  width: 90%;
+  height: 65%;
+  padding-top: 5%;
+  text-align: center;
+  white-space: pre-line;
+  font-size: 40rpx;
+}
+
+.btn {
+  width: 74rpx;
+  height: 74rpx;
+}
+
+.currenttime {
+  padding-left: 80rpx;
+  font-size: 40rpx;
+}
+
+.bofang {
+  width: 80%;
+  border: 6rpx solid rgb(0, 0, 0);
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+}
+
+.like {
+  padding-left: 2%;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.lan {
+  padding-top: 50rpx;
+  padding-left: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.say {
+  background-color: rgb(255, 251, 251);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 6rpx;
+}
+
+.user_box>image {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 40rpx;
+}
+.user_box>text {
+  padding-left: 10rpx;
+}
+.user_box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 4rpx;
+
+}
+.user_box2>image {
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 30rpx;
+}
+.pinglun_box
+{
+  padding-bottom: 15rpx;
+}
+.time {
+  color: rgb(58, 56, 56);
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 5%;
+  background-color: rgb(255, 251, 251);
+}
+
+.say>text {
+  padding: 10rpx;
+  white-space: pre-line;
+}
+
+.newsaContent {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bdescription {
+  color: #7a7979;
+   font-size: 15px;
+   display: -webkit-box;
+  text-align: left;
+  margin:0px 20px 20px 20px;
+   text-indent: 60rpx;
+}
+.adescription {
+  color: rgba(56, 56, 56, 0.849);
+  font-size: 20px;
+  display: flex;  
+justify-content: center;
+ margin:20px 40px 20px 40px;
+}
+.hdescription {
+  
+  color: #7a7979;
+   font-size: 15px;
+   display: -webkit-box;
+  text-align: left;
+  margin:0px 20px 20px 20px;
+}
+/* pages/packaged/pinlun/pinlun.wxss */
+/* 公共样式类 */
+.flexed{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* 评论详情 */
+.flexed{
+  display: flex;
+  align-items: center;
+}
+.nar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20rpx;
+  /* 用来适配 设置安全区域 */
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+  background-color: #ffffff;
+}
+.colorred{
+  color: red;
+}
+.colorhui{
+  color: #dac04e3f;
+}
+.font30{
+  font-size: 30rpx;
+}
+
+.comment_box{
+  width: 100%;
+  padding: 10rpx;
+  font-size: 30rpx;
+  line-height: 1.6;
+  padding-bottom: 100rpx;
+}
+.pinglun_name
+{
+  color: #000;
+}
+.pinglun_input
+{
+ position:fixed;
+ bottom:0;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+
+}
+.color{
+  background-color: #8584813f;
+}
+.login_img{
+  height: 100%;
+  flex: 0.8;
+  text-align: center;
+}
+.login_img>image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 11rpx auto;
+  border-radius: 50%;
+}
+.search_input{
+  height: 100%;
+  flex: 3.2;
+  padding: 10rpx;
+}
+.search_inputbox{
+  height: 100%;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.search_inputbox>text{
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  line-height: 2.5;
+  font-size: 13px;
+  margin-left: 5rpx;
+}
+.search_inputbox>input{
+  width: 90%;
+  height: 100%;
+  font-size: 29rpx;
+  margin-right: 10rpx;
+}
+.search{
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  color: #ffffff;
+}
+.search>text{
+  font-size: 10px;
+  margin-left: 10rpx;
+}
+

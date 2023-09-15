@@ -1,0 +1,35 @@
+<!-- 一般情况下的搜索框显示 -->
+<view class="search-box">
+  <view wx:if="{{!focus}}" class='search'>
+    <image class="search_image" src='./搜索.png'></image>
+    <input type='text' placeholder='搜索古诗词' placeholder-class="center" confirm-type='search' bindfocus="focusHandler"></input>
+  </view>
+  <!-- 获得焦点时的搜索框，多一个取消按钮 -->
+  <view wx:if="{{focus}}" class='search'>
+    <input class="search_input" type='text' placeholder='搜索古诗词' confirm-type='search' value="{{inputValue}}" bindinput='query'  bindconfirm="find">
+    </input>
+    <image class="search_image" src='./取消.png' bindtap='cancelHandler'></image>
+  </view>
+  <view class="btn" bindtap="find">搜索</view>
+</view>
+
+<!-- 搜索结果显示框 -->
+<scroll-view wx:if="{{focus}}" class="scrollview" scroll-y="true">
+  <view wx:for="{{list1}}" wx:key="title">
+    <view class="scrollItem" bindtap="goto" data-title="{{item.title}}">
+      <text class="font1" space="nbsp"> {{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+
+<view class="show" wx:for="{{share_list}}" wx:key="_id" bindtap="to_show" data-reciteID="{{item._id}}">
+<view class="message">
+    <view class="title">{{item.poem_title}}</view>
+    <view class="author">作者：{{item.poem_author}}</view>
+    <view class="flower"><image src='./点赞后.png'></image>鲜花:{{item.flower}}</view>
+</view>
+  <view class="listen">听朗诵</view>
+  </view>
+
+  <view wx:if="{{loaded}}" class="end">到底啦~</view>

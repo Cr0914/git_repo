@@ -1,0 +1,7 @@
+<!--pages/person/help/help.wxml-->
+<text>
+  诗词文库总量不够多 可能搜索不到相关诗词 我们会尽快完善诗词库
+
+</text>
+<text>文库界面无法正常触底时请： 先往上滑再下滑触底 即可刷新</text>
+<image src="/packageD/help_react.jpg" mode="widthFix"></image>

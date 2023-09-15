@@ -1,0 +1,24 @@
+<!--pages/diy/diy.wxml-->
+<image src="/packageC/image/sentence.jpg" class="background" mode="aspectFill"></image>
+<view class="title">{{title}}</view>
+<view class="author">作者：{{author}}</view>
+<view class="box1">
+<textarea class="content" placeholder="说点什么吧~" maxlength="-1" bindblur="context"></textarea>
+</view>
+
+<view class="bofang">
+<image wx:if="{{!isPlay}}" class="btn"  bindtap="play_on" src='../image/播放圆.png' mode="aspectFit"></image>
+<image wx:else class="btn"  bindtap="play_off" src='../image/暂停圆.png' mode="aspectFit"></image>
+<text class='time'>{{play.currentTime}}</text>
+</view>
+<view class="country">
+<checkbox-group bindchange='checked'>
+<checkbox value= 'true' checked/>
+<label>同时分享到社区</label>
+</checkbox-group>
+</view>
+<button class="btn" bindtap="ifupload">确认上传</button>
+
+<modal wx:if="{{up}}" class="stopOp" show="true" height='25%' bindcancel="upCancel" bindconfirm='upConfirm'>
+  <view class="tips">上传后将不再可以更改，确定要上传吗？</view>
+</modal>

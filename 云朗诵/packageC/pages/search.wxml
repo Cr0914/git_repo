@@ -1,0 +1,31 @@
+<image class="background" src='../image/back1.jpeg'></image>
+<view class="search-box">
+  <view wx:if="{{!focus}}" class='search'>
+    <image class="search_image" src='../image/搜索.png'></image>
+    <input type='text' placeholder='搜索古诗词' placeholder-class="center" confirm-type='search' bindfocus="focusHandler"></input>
+  </view>
+  <view wx:if="{{focus}}" class='search'>
+    <input class="search_input" type='text' placeholder='搜索古诗词' confirm-type='search' value="{{inputValue}}" bindinput='query'  bindconfirm="find">
+    </input>
+    <image class="search_image" src='../image/取消.png' bindtap='cancelHandler'></image>
+  </view>
+  <view class="btn" bindtap="find">搜索</view>
+</view>
+
+<!-- 搜索结果显示框 -->
+<scroll-view wx:if="{{focus}}" class="scrollview" scroll-y="true">
+  <view wx:for="{{list1}}" wx:key="_id">
+    <view class="scrollItem" bindtap="goto" data-search="{{item.title}}">
+      <text class="font1" space="nbsp"> {{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{!focus}}" class="result-box">
+  <view class="result" wx:for="{{list2}}" wx:key="_id" bindtap="to_recite" data-item="{{item}}">
+    <view class="title">{{item.title}}</view>
+    <view class="author">作者：{{item.author}}</view>
+    <view class="content">{{item.content}}</view>
+  </view>
+  <view class="end">到底啦~</view>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/show/show.wxml-->
+<image src="/packageC/image/back2.jpeg" class="background" mode="aspectFill"></image>
+<!-- <scroll-view class="result"> -->
+<view class="demo-box">
+  <view class='title'>《{{poem.title}}》</view>
+  <view class='author'>{{poem.author}}</view>
+  <scroll-view scroll-y class="poem-box">{{poem.content}}</scroll-view>
+</view>
+<view class="lan">
+<view class="bofang">
+<image wx:if="{{!isPlay}}" class="btn"  bindtap="play_on" src='../image/播放圆.png' mode="aspectFit"></image>
+<image wx:else class="btn"  bindtap="play_off" src='../image/暂停圆.png' mode="aspectFit"></image>
+<text class='currenttime'>{{play.currentTime}}</text>
+</view>
+<image wx:if="{{!like}}" class="like" bindtap="uplike"  src='../image/点赞前.png'></image>
+<image wx:else class="like" bindtap="offlike"  src='../image/点赞后.png'></image>
+<text>{{flower}}</text>
+</view>
+<view class="say">
+  <view class="user_box">
+    <image src="{{user_img}}" ></image> 
+    <text>{{user_name}}：</text>
+  </view>
+<text decode="{{true}}">&nbsp;&nbsp;{{say}}</text>
+</view>
+<text class="time">{{time}}</text>
+
+
+<view class="comment_box">
+    <text style="font-size: large;font-weight: 600;padding-bottom: 20rpx;">评论：</text>
+    <view wx:for="{{commentList}}" wx:key='index' class="pinglun_box">
+      <view class="user_box2">
+      <image src="{{item.image}}" ></image>
+      <text class="pinglun_name">{{item.name}}：</text>
+      </view>
+      <text style="padding:60rpx">{{item.pinlun}}</text>
+    </view>
+</view>
+<!-- </scroll-view> -->
+
+<view class="nar flexed color">
+  <view class="login_img">
+    <image src="{{pinlun_avatarUrl}}"></image>
+  </view>
+  <view class="search_input">
+    <view class="search_inputbox flexed">
+      <text class="iconfont icon-search"></text>
+      <input placeholder="请输入内容" bindinput="pinlun" bindconfirm="send"/>
+    </view>
+  </view>
+  <view class="search" bindtap="send">
+    <block>评论</block>
+  </view>
+</view> 

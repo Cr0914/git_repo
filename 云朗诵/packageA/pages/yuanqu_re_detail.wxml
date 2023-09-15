@@ -1,0 +1,26 @@
+
+<image class='background' src="/images/backgroud/poet_intro2.png"mode="aspectFill"></image>
+<view class="div1" wx:for="{{poemINFO}}" wx:key="_id">
+  <view class="div2">
+    <text  user-select class="title">《{{item.title}}》</text>
+    <text  user-select  class="chapter-section">{{item.dynasty}}:{{item.author}}</text>
+    <!-- 收藏-->
+    <view class="collect-box">
+      <block wx:if="{{isShow==false}}">
+        <image src="/images/person/collect.png" bindtap="handleCollect" data-id="{{item._id}}" class="save_image"></image>
+      </block>
+      <block wx:if="{{isShow==true}}" >
+        <image src="/images/person/collect_active.png" bindtap="handleCollect" data-id="{{item._id}}" class="save_image"></image>
+      </block>
+      <text class="collect_text" decode="{{true}}">收藏&nbsp;&nbsp;&nbsp;</text>
+      <image wx:if="{{!play}}" src="../1.png" style="width: 64rpx;height: 64rpx;" bindtap='bofang'></image>
+      <image wx:else src="../2.png" style="width: 64rpx;height: 64rpx;" bindtap='pause'></image>
+    </view>
+    <!-- </text> 换行写时 其间的文本也会换行 -->
+    <text  user-select class="paragraph" wx:for="{{item.content}}" wx:for-item="paragraphs" wx:key="index">{{item.content[index]}}
+     
+     </text>   <!-- 这里要换行 更清晰 -->
+    
+  </view>
+
+</view>
